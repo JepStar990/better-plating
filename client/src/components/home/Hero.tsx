@@ -9,8 +9,9 @@ export default function Hero() {
     >
       <div className="absolute inset-0 opacity-20 dark:opacity-10">
         <div className="absolute inset-0 bg-black opacity-40"></div>
-        <img 
-          src="https://images.unsplash.com/photo-1624398440729-89ecacdb2a11?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80" 
+        <img
+          src="https://sigmamergers.com/wp-content/uploads/2023/03/AdobeStock_90602066-scaled.webp" 
+          //src="https://images.unsplash.com/photo-1624398440729-89ecacdb2a11?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80" 
           alt="Industrial steel manufacturing" 
           className="w-full h-full object-cover"
         />

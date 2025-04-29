@@ -115,6 +115,7 @@ Custom CSS variables in `index.css` define the color system:
 
 ### Theme System
 
+(Currently not fully implemented)
 The theme system uses React Context API to provide theme information throughout the application:
 
 ```typescript

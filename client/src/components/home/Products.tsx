@@ -98,11 +98,11 @@ export default function Products() {
   }, []);
   
   return (
-    <section id="products" className="py-16 bg-white dark:bg-dark transition-colors duration-300">
+    <section id="products" className="py-16 text-black bg-white dark:bg-dark transition-colors duration-300">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-heading font-bold text-primary dark:text-white mb-4">Our Products</h2>
-          <p className="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+          <h2 className="text-black md:text-4xl font-heading font-bold text-black dark:text-white mb-4">Our Products</h2>
+          <p className="text-black-600 dark:text-gray-300 max-w-2xl mx-auto">
             We specialize in galvanizing a wide range of industrial components, from small fasteners to large structural elements.
           </p>
         </div>
@@ -142,15 +142,15 @@ export default function Products() {
         {/* Product Gallery */}
         <div 
           ref={productsRef}
-          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6"
+          className="text-black grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6"
         >
           {filteredProducts.map((product, index) => (
             <div 
               key={product.id}
-              className="product-item animate-fadeInUp opacity-0"
+              className="product-item animate-fadeInUp"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
-              <Card className="bg-light dark:bg-dark-lighter rounded-lg overflow-hidden shadow-md h-full">
+              <Card className="text-black bg-light dark:bg-dark-lighter rounded-lg overflow-hidden shadow-md h-full">
                 <div className="h-56 relative overflow-hidden">
                   <img 
                     src={product.image} 
@@ -159,8 +159,8 @@ export default function Products() {
                   />
                 </div>
                 <CardContent className="p-4">
-                  <h3 className="text-lg font-heading font-bold text-dark dark:text-white">{product.title}</h3>
-                  <p className="text-gray-600 dark:text-gray-300 text-sm">
+                  <h3 className="text-black font-heading font-bold text-dark dark:text-white">{product.title}</h3>
+                  <p className="text-black dark:text-gray-300 text-sm">
                     {product.description}
                   </p>
                 </CardContent>

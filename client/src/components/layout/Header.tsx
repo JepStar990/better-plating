@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import { Link, useLocation } from 'wouter';
 import Logo from '@/components/ui/logo';
-import ThemeToggle from '@/components/layout/ThemeToggle';
 import { Button } from '@/components/ui/button';
 import { useTheme } from '@/hooks/use-theme';
 import { scrollToElement } from '@/lib/utils';
@@ -32,7 +31,7 @@ export default function Header() {
       <nav className="container mx-auto px-4 py-3 flex items-center justify-between">
         {/* Logo */}
         <Logo />
-        
+
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center space-x-6">
           {navigation.map((item) => (
@@ -44,16 +43,13 @@ export default function Header() {
               {item.name}
             </Link>
           ))}
-          
-          <ThemeToggle />
         </div>
-        
+
         {/* Mobile Menu Button */}
         <div className="flex items-center md:hidden">
-          <ThemeToggle />
-          <Button 
-            variant="ghost" 
-            size="icon" 
+          <Button
+            variant="ghost"
+            size="icon"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             className="ml-2"
           >
@@ -65,7 +61,7 @@ export default function Header() {
           </Button>
         </div>
       </nav>
-      
+
       {/* Mobile Menu */}
       {mobileMenuOpen && (
         <div className="md:hidden bg-white dark:bg-dark-lighter shadow-md">
@@ -86,3 +82,4 @@ export default function Header() {
     </header>
   );
 }
+

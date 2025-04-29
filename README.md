@@ -2,12 +2,12 @@
 
 A professional business website for Better Plating, a zinc electroplating company based in Kempton Park, South Africa. The website showcases the company's galvanizing services and products with a modern, responsive design.
 
-![Better Plating Website](./attached_assets/Business%20Card.jpg)
+![Better Plating Website](./attached_assets/webpage.png)
 
 ## Features
 
 - **Modern Responsive Design**: Mobile-friendly layout that looks great on all devices
-- **Dark/Light Mode**: Theme toggle for user preference and improved readability
+- **Dark/Light Mode**: Theme toggle for user preference and improved readability(Temporarily disabled)
 - **SEO Optimized**: Meta tags and semantic markup for better search engine visibility
 - **Multiple Pages**: Home, Services, Products, Process, About, and Contact sections
 - **Inquiry Form**: Contact form for customers to request quotes and inquiries
@@ -97,7 +97,10 @@ This project is licensed under the MIT License.
 
 ## Contact
 
-For questions or support, contact:
+For project questions or support, contact:
+- Email: zwiswamuridili990@gmail.co.za
+
+For business questions or support, contact:
 - Manuel: 0782269951
 - Email: info@betterplating.co.za
 - Address: No 13 Ossewa Street, Chloorkop, Kempton Park, South Africa
