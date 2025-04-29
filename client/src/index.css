@@ -1,0 +1,169 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Base colors */
+  --background: 0 0% 100%;
+  --foreground: 220 20% 10%;
+  --muted: 60 5% 96%;
+  --muted-foreground: 220 10% 35%;
+  
+  /* UI components */
+  --popover: 0 0% 100%;
+  --popover-foreground: 220 20% 10%;
+  --card: 0 0% 100%;
+  --card-foreground: 220 20% 10%;
+  --border: 220 20% 90%;
+  --input: 220 20% 90%;
+  
+  /* Brand colors - Better Plating */
+  --primary: 210 100% 30%;         /* Deeper blue for better contrast */
+  --primary-foreground: 0 0% 100%; /* White text on primary */
+  --secondary: 45 100% 45%;        /* Gold/yellow, slightly darker for better contrast */
+  --secondary-foreground: 0 0% 10%; /* Dark text on secondary */
+  --accent: 142 71% 35%;           /* Green, deeper for better contrast */
+  --accent-foreground: 0 0% 10%;   /* Dark text on accent */
+  
+  /* System colors */
+  --destructive: 0 84% 60%;
+  --destructive-foreground: 0 0% 100%;
+  --ring: 210 100% 30%;
+  --radius: 0.5rem;
+  
+  /* Metal and zinc finishes */
+  --metallic: 228 10% 67%;
+  --metallic-light: 228 10% 83%;
+  --metallic-dark: 228 10% 40%;
+  
+  /* Semantic colors */
+  --dark: 220 20% 13%;
+  --dark-lighter: 220 15% 25%;
+  --light: 0 0% 98%;
+  --light-darker: 0 0% 88%;
+  
+  /* Data visualization */
+  --chart-1: 210 100% 30%;
+  --chart-2: 45 100% 45%;
+  --chart-3: 142 71% 35%;
+  --chart-4: 0 0% 13%;
+  --chart-5: 228 10% 67%;
+  
+  /* Sidebar styles */
+  --sidebar-background: 0 0% 100%;
+  --sidebar-foreground: 220 20% 10%;
+  --sidebar-primary: 210 100% 30%;
+  --sidebar-primary-foreground: 0 0% 100%;
+  --sidebar-accent: 45 100% 45%;
+  --sidebar-accent-foreground: 0 0% 10%;
+  --sidebar-border: 220 20% 90%;
+  --sidebar-ring: 210 100% 30%;
+}
+
+.dark {
+  /* Base colors */
+  --background: 220 20% 10%;
+  --foreground: 0 0% 98%;
+  --muted: 220 20% 18%;
+  --muted-foreground: 220 15% 80%;  /* Lighter for better visibility */
+  
+  /* UI components */
+  --popover: 220 20% 10%;
+  --popover-foreground: 0 0% 98%;
+  --card: 220 20% 13%;
+  --card-foreground: 0 0% 98%;
+  --border: 220 15% 30%;  /* Slightly lighter for better visibility */
+  --input: 220 15% 30%;
+  
+  /* Brand colors - Better Plating */
+  --primary: 210 100% 50%;         /* Brighter blue for dark mode */
+  --primary-foreground: 0 0% 100%; /* White text on primary */
+  --secondary: 45 100% 65%;        /* Brighter gold/yellow for dark mode */
+  --secondary-foreground: 0 0% 10%; /* Dark text on secondary */
+  --accent: 142 71% 50%;           /* Brighter green for dark mode */
+  --accent-foreground: 0 0% 10%;   /* Dark text on accent */
+  
+  /* System colors */
+  --destructive: 0 70% 50%;
+  --destructive-foreground: 0 0% 98%;
+  --ring: 210 100% 60%;
+  
+  /* Sidebar styles */
+  --sidebar-background: 220 20% 10%;
+  --sidebar-foreground: 0 0% 98%;
+  --sidebar-primary: 210 100% 50%;
+  --sidebar-primary-foreground: 0 0% 100%;
+  --sidebar-accent: 45 100% 65%;
+  --sidebar-accent-foreground: 0 0% 10%;
+  --sidebar-border: 220 15% 30%;
+  --sidebar-ring: 210 100% 60%;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading;
+  }
+}
+
+@layer components {
+  .text-shadow {
+    text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+  }
+  
+  .metallic-gradient {
+    background: linear-gradient(145deg, hsl(var(--metallic)), hsl(var(--metallic-light)), hsl(var(--metallic)));
+  }
+  
+  .zinc-gradient {
+    background: linear-gradient(145deg, hsl(var(--metallic)), #d6e4e9, #c4d7cd);
+  }
+  
+  .dark .zinc-gradient {
+    background: linear-gradient(145deg, hsl(var(--metallic-dark)), #95989e, hsl(var(--metallic-dark)));
+  }
+  
+  .service-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  }
+  
+  .gallery-img {
+    transition: transform 0.3s ease;
+  }
+  
+  .gallery-img:hover {
+    transform: scale(1.05);
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .animate-fadeInUp {
+    animation: fadeInUp 0.6s ease forwards;
+  }
+  
+  .delay-100 { animation-delay: 0.1s; }
+  .delay-200 { animation-delay: 0.2s; }
+  .delay-300 { animation-delay: 0.3s; }
+  .delay-400 { animation-delay: 0.4s; }
+}
