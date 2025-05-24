@@ -2,15 +2,15 @@ import { useState, useEffect, useRef } from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { ProductItem } from '@/lib/types';
-import galv1 from '@/../assets/galvanized steel1.jpg';
-import galv2 from '@/../assets/galvanized steel2.jpg';
-import galv3 from '@/../assets/galvanized steel3.jpg';
-import galv4 from '@/../assets/galvanized steel4.jpg';
-import galv5 from '@/../assets/galvanized steel5.jpg';
-import galv6 from '@/../assets/galvanized steel6.jpg';
-import galv7 from '@/../assets/galvanized steel7.jpg';
-import galv8 from '@/../assets/galvanized steel8.jpg';
-import galv9 from '@/../assets/galvanized steel9.jpg';
+import galv1 from '@/../public/assets/galvanized steel1.jpg';
+import galv2 from '@/../public/assets/galvanized steel2.jpg';
+import galv3 from '@/../public/assets/galvanized steel3.jpg';
+import galv4 from '@/../public/assets/galvanized steel4.jpg';
+import galv5 from '@/../public/assets/galvanized steel5.jpg';
+import galv6 from '@/../public/assets/galvanized steel6.jpg';
+import galv7 from '@/../public/assets/galvanized steel7.jpg';
+import galv8 from '@/../public/assets/galvanized steel8.jpg';
+import galv9 from '@/../public/assets/galvanized steel9.jpg';
 
 const products: ProductItem[] = [
   {
