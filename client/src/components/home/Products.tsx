@@ -2,62 +2,71 @@ import { useState, useEffect, useRef } from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { ProductItem } from '@/lib/types';
+import galv1 from '@/../assets/galvanized steel1.jpg';
+import galv2 from '@/../assets/galvanized steel2.jpg';
+import galv3 from '@/../assets/galvanized steel3.jpg';
+import galv4 from '@/../assets/galvanized steel4.jpg';
+import galv5 from '@/../assets/galvanized steel5.jpg';
+import galv6 from '@/../assets/galvanized steel6.jpg';
+import galv7 from '@/../assets/galvanized steel7.jpg';
+import galv8 from '@/../assets/galvanized steel8.jpg';
+import galv9 from '@/../assets/galvanized steel9.jpg';
 
 const products: ProductItem[] = [
   {
     id: '1',
     title: 'Industrial Fasteners',
     description: 'Zinc-plated bolts, nuts, and fastening components with superior corrosion resistance.',
-    image: '/assets/galvanized steel1.jpg',
+    image: galv1,
     category: 'fasteners'
   },
   {
     id: '2',
     title: 'Industrial Flanges',
     description: 'Precision-galvanized flanges for piping systems and industrial applications.',
-    image: '/assets/galvanized steel2.jpg',
+    image: galv2,
     category: 'fasteners'
   },
   {
     id: '3',
     title: 'Mounting Hardware',
     description: 'Heavy-duty galvanized mounting plates and brackets for structural applications.',
-    image: '/assets/galvanized steel3.jpg',
+    image: galv3,
     category: 'structural'
   },
   {
     id: '4',
     title: 'Specialized Components',
     description: 'Custom-designed galvanized components for specialized industrial applications.',
-    image: '/assets/galvanized steel4.jpg',
+    image: galv4,
     category: 'custom'
   },
   {
     id: '5',
     title: 'Structural Frameworks',
     description: 'Galvanized framing elements for commercial and industrial structures.',
-    image: '/assets/galvanized steel5.jpg',
+    image: galv5,
     category: 'structural'
   },
   {
     id: '6',
     title: 'Industrial Hardware',
     description: 'Zinc-plated industrial hardware engineered for durability in demanding environments.',
-    image: '/assets/galvanized steel8.jpg',
+    image: galv8,
     category: 'fasteners'
   },
   {
     id: '7',
     title: 'Custom Plating Solutions',
     description: 'Specialized electroplating for unique industrial components and custom parts.',
-    image: '/assets/galvanized steel9.jpg',
+    image: galv9,
     category: 'custom'
   },
   {
     id: '8',
     title: 'Structural Components',
     description: 'Heavy-duty galvanized structural elements for construction and industrial applications.',
-    image: '/assets/galvanized steel7.jpg',
+    image: galv7,
     category: 'structural'
   }
 ];

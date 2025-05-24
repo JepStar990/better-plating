@@ -8,7 +8,7 @@ interface ThemeContextProps {
 }
 
 export const ThemeContext = createContext<ThemeContextProps>({
-  theme: 'light',
+  theme: 'dark',
   setTheme: () => null,
 });
 
