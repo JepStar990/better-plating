@@ -19,11 +19,11 @@ A professional business website for Better Plating, a zinc electroplating compan
 
 - **Frontend**: React, TypeScript, TailwindCSS, shadcn/ui components
 - **Backend**: Express.js with Node.js
-- **Routing**: Wouter for client-side routing
-- **Forms**: React Hook Form with Zod validation
+- **Routing**: Wouter for client-side routing.
+- **Forms**: React Hook Form with Zod validation.
 - **State Management**: TanStack Query for server state management
-- **Data Storage**: In-memory storage for inquiries
-- **Styling**: Tailwind CSS with custom theming
+- **Data Storage**: In-memory storage for inquiries.
+- **Styling**: Tailwind CSS with custom theming.
 
 ## Project Structure
 
