@@ -67,12 +67,12 @@ export default function Contact() {
         Phone: ${data.phone || 'Not provided'}
         Company: ${data.company || 'Not provided'}
 
-        Service Interested In:>
+        Service Interested In:
         ${data.service}
 
-        <strong>Message:
+        Message:
         ${data.message}
-      `;
+      `.trim();
 
       const currentTime = new Date().toLocaleString();
 
@@ -81,7 +81,9 @@ export default function Contact() {
         import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
         {
           name: data.name,
-          message: formattedMessage
+          time: currenttime,
+          message: formattedMessage,
+          email: data.email
         },
         import.meta.env.VITE_EMAILJS_PUBLIC_KEY
       );
