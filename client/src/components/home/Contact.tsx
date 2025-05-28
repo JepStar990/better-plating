@@ -81,7 +81,7 @@ export default function Contact() {
         import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
         {
           name: data.name,
-          time: currenttime,
+          time: currentTime,
           message: formattedMessage,
           email: data.email
         },
